@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MotoBooking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>MotoBooking</h1>
+    <section class="header-cont">
+        <img id="home-btn" class="home-btn" onclick="window.location.href = '/';" src="Home.png"/>
+        <img id="logo" class="logo" src="logomoto.png"/>
+        <button id="logout-btn" style="display: none;">Logout</button>
+    </section>
+</header>
+
+<main>
+    <div class="signup-container">
+        <div class="signup-card">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+
+                <button type="submit">Sign Up!</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>Email: info@motobooking.com</p>
+    <p>Phone: +1 (555) 123-4567</p>
+</section>
+
+<script src="sign-up-page.js"></script>
+</body>
+</html>

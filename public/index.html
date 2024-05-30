@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoBooking</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<header>
+    <h1>MotoBooking</h1>
+    <section class="header-cont">
+        <img id="home-btn" class="home-btn" onclick="window.location.href = '/';" src="Home.png"/>
+        <img id="logo" class="logo" ; src="logomoto.png"/>
+        <button id="logout-btn" class="logout-btn" style="display: none;">Logout</button>
+    </section>
+</header>
+
+<main>
+    <h1 class="title">Management Page</h1>
+    <h2 class="title">- Admin -</h2>
+    <section class="button-container">
+        <div class="card">
+            <p>Here you can see all the existing circuits, and you can change the next race date, or, delete an existing circuit. You can also add a new circuit and view additional info about each circuit.</p>
+            <button class="custom-button" type="button" onclick="window.location.href = '/circuits-page';">Manage Circuits</button>
+        </div>
+        <div class="card">
+            <p>Here you can see all the registered users on the platform so far, including their role which you can update, or, in addition, you can remove the users information from the platform.</p>
+            <button class="custom-button" type="button" onclick="window.location.href = '/users-page';">Manage Users</button>
+        </div>
+        <div class="card">
+            <p>Here you can keep track of all the reservations made, you can delete them or change the circuit from the reservation and in addition you can see more info about the reservation including circuit name and country.</p>
+            <button class="custom-button" type="button" onclick="window.location.href = '/reservations-page';">Manage Reservations</button>
+        </div>
+    </section>
+
+</main>
+<section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>Email: info@motobooking.com</p>
+    <p>Phone: +1 (555) 123-4567</p>
+</section>
+
+
+<script src="script.js"></script>
+<script src="auth.js" defer></script>
+</body>
+</html>

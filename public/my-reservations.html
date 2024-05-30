@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoBooking</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<header>
+    <h1>MotoBooking</h1>
+    <section class="header-cont">
+        <img id="home-btn" class="home-btn" onclick="window.location.href = '/users-perspective';" src="Home.png"/>
+        <img id="logo" class="logo" src="logomoto.png"/>
+        <button id="logout-btn" class="logout-btn" style="display: none;">Logout</button>
+    </section>
+</header>
+
+<section class="reservations-section" id="reservations-section">
+    <h2 class="title">My Reservations</h2>
+    <div id="my-reservations-container" class="my-reservations-container"></div>
+    <h4 class="no-reservations-container" id="no-reservations-container"></h4>
+    <button id="book-now-btn" class="custom-book-now-button" onclick="window.location.href = '/book-now-page';" style="display: none">Book Now!</button>
+</section>
+
+<section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>Email: info@motobooking.com</p>
+    <p>Phone: +1 (555) 123-4567</p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+
+<script src="script.js"></script>
+<script src="auth.js" defer></script>
+<script src="my-reservations.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>MotoBooking</h1>
+    <section class="header-cont">
+        <img id="home-btn" class="home-btn" onclick="window.location.href = '/';" src="Home.png"/>
+        <img id="logo" class="logo" ; src="logomoto.png"/>
+        <button id="logout-btn" class="logout-btn" style="display: none;">Logout</button>
+    </section>
+</header>
+
+<h2 class="reservation-title">Reservations</h2>
+<div id="reservations-container" class="reservations-container"></div>
+
+<!-- Contact Us Section -->
+<section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>Email: info@motobooking.com</p>
+    <p>Phone: +1 (555) 123-4567</p>
+</section>
+
+<div id="updateReservationModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Update Circuit For The Reservation</h2>
+
+        <section class="update-reservation-circuit">
+            <label for="newCircuit">New Circuit:</label>
+            <select id="newCircuit" name="newCircuit" required class="book-now-select-circuit">
+                <option value="" id="selectedCircuit">Select Circuit</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date" readonly><br>
+        </section>
+
+        <button id="cancelBtn" class="cancelBtn">Cancel</button>
+        <button id="saveBtn" class="saveBtn">Save</button>
+    </div>
+</div>
+
+<div id="reservationInfoModal" class="modal">
+    <div class="modal-content">
+        <span class="close-info">&times;</span>
+        <h2>Reservation Information</h2>
+        <div id="reservation-info-content"></div>
+        <p id="circuitName"></p>
+        <p id="circuitCountry"></p>
+        <button id="closeInfoBtn" class="closeBtn">Close</button>
+    </div>
+</div>
+
+<script src="reservations.js"></script>
+<script src="auth.js" defer></script>
+</body>
+</html>

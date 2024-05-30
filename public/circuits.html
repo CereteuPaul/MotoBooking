@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoBooking</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<header>
+    <h1>MotoBooking</h1>
+    <section class="header-cont">
+        <img id="home-btn" class="home-btn" onclick="window.location.href = '/';" src="Home.png"/>
+        <img id="logo" class="logo" src="logomoto.png"/>
+        <button id="logout-btn" class="logout-btn" style="display: none;">Logout</button>
+    </section>
+</header>
+
+<main>
+    <section class="add-circuit-btn">
+    <h2>Circuits Management</h2>
+    <button id="addCircuitBtn" class="addcircuitbtn">Add Circuit</button>
+    </section>
+    <div id="circuits-container" class="circuits-container"></div>
+</main>
+
+<section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>Email: info@motobooking.com</p>
+    <p>Phone: +1 (555) 123-4567</p>
+</section>
+
+<!-- Update Next Race Date Modal -->
+<div id="updateDateModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Update Next Race Date</h2>
+        <label for="nextRaceDate">Next Race Date:</label>
+        <input type="date" id="nextRaceDate" name="nextRaceDate">
+        <button id="cancelBtn" class="cancelBtn">Cancel</button>
+        <button id="saveBtn" class="saveBtn">Save</button>
+    </div>
+</div>
+
+<!-- Add New Circuit Modal -->
+<div id="addCircuitModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add New Circuit</h2>
+        <label for="circuitName">Circuit Name:</label>
+        <input type="text" id="circuitName" name="circuitName"><br>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br>
+        <label for="circuitPhoto">Circuit Photo (URL):</label>
+        <input type="text" id="circuitPhoto" name="circuitPhoto"><br>
+        <label for="length">Length (km):</label>
+        <input type="number" id="length" name="length" step="0.1"><br>
+        <label for="createNextRaceDate">Next Race Date:</label>
+        <input type="date" id="createNextRaceDate" name="createNextRaceDate"><br>
+        <button id="closeAddCircuitBtn" class="cancelBtn">Close</button>
+        <button id="saveCircuitBtn" class="saveBtn">Save</button>
+    </div>
+</div>
+
+<!-- Circuit Info Modal -->
+<div id="circuitInfoModal" class="modal">
+    <div class="modal-content">
+        <span class="close-info">&times;</span>
+        <h2>Circuit Information</h2>
+        <div id="circuit-info-content"></div>
+        <p id="weather"></p>
+        <p id="conditions"></p>
+        <p id="pitSpeedLimit"></p>
+        <p id="groups"></p>
+        <p id="count"></p>
+        <button id="closeInfoBtn" class="closeBtn">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="auth.js" defer></script>
+<script src="circuits.js"></script>
+</body>
+</html>

@@ -1,0 +1,731 @@
+/*Styling for button*/
+button {
+    cursor: pointer;
+}
+
+
+/*Create custom font for the logo*/
+@font-face {
+    font-family: 'logo-font';
+    src: url('logo-font.otf') format('truetype');
+}
+
+
+/*Header Styling*/
+header {
+    background-image: url('Header.jpg');
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1{
+    font-family: 'logo-font';
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+
+/*Styling for the home button and logo*/
+.header-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.home-btn{
+    height: 50px;
+    width: 80px;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+.logo{
+    height: 50px;
+    width: 100px;
+    margin-left: 35px;
+}
+
+
+/*Logout Button Styling*/
+.logout-btn{
+    font-family: 'logo-font';
+    padding: 10px 10px; /* Increase padding for larger buttons */
+    font-size: 15px; /* Increase font size for larger buttons */
+    border: none;
+    background-color: #393939;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #2e2e2e;
+}
+
+
+/*Styling for the main body*/
+body {
+    background-image: url('Background.jpg');
+    /*background-color: #717171;*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Contact us section for the footer*/
+.contact-us {
+    font-family: 'logo-font';
+    font-size: 14px;
+    background-image: url("Footer.jpg");
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/*Create custom font for the text*/
+@font-face {
+    font-family: 'text-font';
+    src: url('Junicode.ttf') format('truetype');
+}
+
+
+/*"Add Circuit" button styling for the "Manage Circuits" page*/
+.addcircuitbtn {
+    padding: 10px 20px;
+    font-family: 'text-font';
+    font-size: 20px;
+    border: none;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.addcircuitbtn:hover{
+    background-color: #1175bf;
+}
+
+.add-circuit-btn {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-circuit-btn h2{
+    font-family: 'text-font';
+    font-size: 30px;
+}
+
+
+/*Card for displaying the circuits*/
+.circuit-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+/* Style for the circuit card image */
+.circuit-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style for the circuit card title */
+.circuit-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Style for the circuit card buttons */
+.circuit-card button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Additional styles for the buttons */
+.circuit-card .delete-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.circuit-card .update-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.circuit-card .info-btn {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+/*Custom font for containts of card*/
+.circuits-container{
+    font-family:'text-font';
+    font-size: 17px;
+}
+
+/*Card for displaying the reservations*/
+.reservation-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+/* Style for the circuit card title */
+.reservation-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Style for the circuit card buttons */
+.reservation-card button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Additional styles for the buttons */
+.reservation-card .delete-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.reservation-card .update-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.reservation-card .info-btn {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.reservations-container{
+    font-family: 'text-font';
+    font-size: 17px;
+}
+
+.reservation-title{
+    font-family: 'text-font';
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+}
+
+/*.reservations-section {*/
+/*    height: 650px;*/
+/*}*/
+
+/*Styling for the reservation circuit*/
+.update-reservation-circuit {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Card for displaying the users*/
+.admin-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+/* Style for the circuit card title */
+.admin-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Style for the circuit card buttons */
+.admin-card button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Additional styles for the buttons */
+.admin-card .delete-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.admin-card .update-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.admins-container{
+    font-family: 'text-font';
+    font-size: 17px;
+}
+
+
+/* Popup Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    font-family: 'text-font';
+    font-size: 17px;
+}
+
+/* Popup Content Styling */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Close, Cancel and Save Button Styling*/
+.closeBtn {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+}
+
+.cancelBtn {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+}
+
+.saveBtn {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+}
+
+
+/*Login Card Styling*/
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.login-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 3;
+    font-family: text-font;
+    font-size: 20px;
+}
+
+
+.login-card h2{
+    margin-bottom: 20px;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.login-card input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.login-card button {
+    background-color: #393939;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 10px;
+    font-family: text-font;
+    font-size: 20px;
+}
+
+.login-card button:hover{
+    background-color: #303030;
+}
+
+
+/*Signup Card Styling*/
+.signup-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+.signup-card h2 {
+    margin-bottom: 20px;
+    font-family: text-font;
+    font-size: 21px;
+}
+
+.signup-card form {
+    display: flex;
+    flex-direction: column;
+    font-family: text-font;
+    font-size: 20px;
+}
+
+.signup-card label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.signup-card p{
+    margin-top: 40px;
+    font-family: text-font;
+    font-size: 20px;
+}
+
+.signup-card button {
+    background-color: #393939;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 35px;
+    padding: 10px;
+    font-family: 'text-font';
+    font-size: 20px;
+}
+
+/*Styling for Sign Up button*/
+.sign-up-btn {
+    background-color: #393939;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 35px;
+    padding: 10px;
+    font-family: 'text-font';
+    font-size: 20px;
+}
+
+.sign-up-btn:hover {
+    background-color: #303030;
+}
+
+.signup-card input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*Management Page Cards Styling*/
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 20px;
+}
+
+/*Management Page Button Styling*/
+.custom-button {
+    padding: 20px 40px;
+    font-family: 'text-font';
+    text-weight: bold;
+    font-size: 20px;
+    border: none;
+    background-color: #393939;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-book-now-button {
+    padding: 20px 40px;
+    font-family: 'text-font';
+    text-weight: bold;
+    font-size: 20px;
+    border: none;
+    background-color: #393939;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #303030;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: 'text-font';
+    font-size: 40px;
+    color: white;
+    margin-top: 60px;
+}
+
+
+/*Card Styling*/
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card p {
+    margin: 0 0 20px;
+    font-family: 'text-font';
+    font-size: 20px;
+}
+
+/*About us page styling*/
+.about-us-card {
+    flex: 2; /* Takes up 2/3 of the available space */
+    text-align: center;
+    font-family: text-font;
+    font-size: 20px;
+
+}
+
+
+/*Book now page styling*/
+.book-now-btn {
+    background-color: #393939;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'text-font';
+    font-size: 20px;
+}
+
+.book-now-btn:hover {
+    background-color: #303030;
+}
+
+.book-now-page-container {
+    display: flex;
+    height: calc(100vh);
+}
+
+.book-now-page-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 3;
+}
+
+.book-now-page-form button {
+    background-color: #393939;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 35px;
+    padding: 10px;
+    font-family: 'text-font';
+    font-size: 20px;
+}
+
+.book-now-page-form button:hover{
+    background-color: #303030;
+}
+
+.book-now-page-form h2{
+    font-family: 'text-font';
+    font-size: 25px;
+}
+
+
+
+.book-now-page-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 10px auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+
+.book-now-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    font-family: text-font;
+    font-size: 20px;
+}
+
+.book-now-form input {
+    border-radius: 5px;
+    height: 25px;
+    font-family: text-font;
+    font-size: 20px;
+}
+
+.book-now-circuits {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    font-family: text-font;
+    font-size: 16px;
+}
+
+.book-now-select-circuit {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.book-now-card {
+    flex: 1; /* Takes up 2/3 of the available space */
+    text-align: center;
+    font-family: text-font;
+    font-size: 20px;
+}
+
+.book-now-card p {
+    margin-top: 25px;
+}
+
+.book-now-card h2 {
+    margin-bottom: 10px;
+}
+
+.book-now-page-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.no-reservations-container{
+    font-family: text-font;
+    font-size: 25px;
+    color:white;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

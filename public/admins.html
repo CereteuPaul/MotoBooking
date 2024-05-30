@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admins Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>MotoBooking</h1>
+    <section class="header-cont">
+        <img id="home-btn" class="home-btn" onclick="window.location.href = '/';" src="Home.png"/>
+        <img id="logo" class="logo" ; src="logomoto.png"/>
+        <button id="logout-btn" class="logout-btn" style="display: none;">Logout</button>
+    </section>
+</header>
+
+<h2 class="reservation-title">Admins Management</h2>
+<div id="admins-container" class="admins-container"></div>
+
+<!-- Update Role Modal -->
+<div id="updateRoleModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Update Role</h2>
+        <!-- Added id attribute to select element -->
+        <label for="newRole">New Role:</label>
+        <select id="newRole" name="newRole">
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select>
+        <button id="cancelBtn" class="cancelBtn">Cancel</button>
+        <button id="saveBtn" class="saveBtn">Save</button>
+    </div>
+</div>
+
+<!-- Contact Us Section -->
+<section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>Email: info@motobooking.com</p>
+    <p>Phone: +1 (555) 123-4567</p>
+</section>
+
+<script src="admins.js"></script>
+<script src="auth.js" defer></script>
+</body>
+</html>
